@@ -125,8 +125,8 @@ namespace SisControleVendas.Migrations
                     b.Property<int>("EmployeedID")
                         .HasColumnType("int");
 
-                    b.Property<int>("LaunchDate")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("LaunchDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()

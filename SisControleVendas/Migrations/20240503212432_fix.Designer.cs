@@ -12,8 +12,8 @@ using SisControleVendas.Data;
 namespace SisControleVendas.Migrations
 {
     [DbContext(typeof(SisControleVendasContext))]
-    [Migration("20240503010803_CreateInitialDatabase")]
-    partial class CreateInitialDatabase
+    [Migration("20240503212432_fix")]
+    partial class fix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -128,8 +128,8 @@ namespace SisControleVendas.Migrations
                     b.Property<int>("EmployeedID")
                         .HasColumnType("int");
 
-                    b.Property<int>("LaunchDate")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("LaunchDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()

@@ -21,7 +21,7 @@ namespace SisControleVendas.Models
         public string? Category { get; set; }
 
         [Display(Name = "Data de Lançamento")]
-        public DataType LaunchDate { get; set; }
+        public DateTime LaunchDate { get; set; }
 
         [Display(Name = "Responsável pelo Registro")]
         public int EmployeedID { get; set; }

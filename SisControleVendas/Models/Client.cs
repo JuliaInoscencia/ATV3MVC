@@ -26,7 +26,7 @@ namespace SisControleVendas.Models
         [Display(Name = "Nível de Acesso")]
         public int CredentialID { get; set; }
 
-        [Display(Name = "")]
+        [Display(Name = "Login")]
         public int UserInfoID { get; set; }
     }
 }

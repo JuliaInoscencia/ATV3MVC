@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SisControleVendas.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateInitialDatabase : Migration
+    public partial class fix : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -72,7 +72,7 @@ namespace SisControleVendas.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LaunchDate = table.Column<int>(type: "int", nullable: false),
+                    LaunchDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EmployeedID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
